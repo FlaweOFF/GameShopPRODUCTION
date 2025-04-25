@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #0366d6;
+    --secondary-color: #24292e;
+    --accent-color: #ffc107;
+    --text-color: #ffffff;
+    --background-color: #121212;
+    --card-background: #1e1e1e;
+    --border-color: #333;
+    --discount-color: #ffcc00;
+    --discount-badge-bg: #e63946;
+    --action-button-bg: #4caf50;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+  }
+  
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }

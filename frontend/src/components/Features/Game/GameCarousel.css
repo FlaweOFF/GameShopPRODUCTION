@@ -1,0 +1,117 @@
+.embla {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .embla__viewport {
+    overflow: hidden;
+  }
+  
+  .embla__container {
+    display: flex;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: -10px;
+  }
+  
+  .embla__slide {
+    position: relative;
+    min-width: 33.33%;
+    padding-left: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.7;
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+  
+  .embla__slide--active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .embla__slide__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .embla__slide__image {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  .embla__slide__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .embla__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .embla__button--prev {
+    left: 10px;
+  }
+  
+  .embla__button--next {
+    right: 10px;
+  }
+  
+  .embla__dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .embla__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .embla__dot--active {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .embla__slide {
+      min-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .embla__slide {
+      min-width: 60%;
+    }
+  }

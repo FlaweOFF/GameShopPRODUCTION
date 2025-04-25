@@ -1,0 +1,308 @@
+/* src/components/Pages/GamePage.css */
+.game-page {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding-bottom: 70px; /* Для кнопки добавления в корзину */
+}
+
+.game-page__header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #121212;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.back-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.game-page__title-section {
+  flex: 1;
+  text-align: center;
+}
+
+.game-page__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game-page__action-placeholder {
+  width: 30px;
+}
+
+.game-page__content {
+  padding: 16px;
+}
+
+/* Game Cover */
+.game-cover {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.game-cover__image {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.game-cover__discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e63946;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.game-cover__like-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.heart-icon {
+  color: white;
+  font-size: 18px;
+}
+
+/* Price Info */
+.game-price-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #292929;
+  border-radius: 10px;
+}
+
+.game-price {
+  display: flex;
+  align-items: center;
+}
+
+.game-price__amount {
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.game-price__discount {
+  font-size: 14px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #e63946;
+  color: white;
+}
+
+/* Кэшбэк удален */
+
+/* Editions */
+.game-editions {
+  margin-bottom: 25px;
+}
+
+.game-editions__title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.game-editions__list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.edition-button {
+  min-width: 140px;
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #292929;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.edition-button--selected {
+  border: 1px solid #ffcc00;
+  background-color: #333;
+}
+
+.edition-name {
+  font-size: 14px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.edition-price {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Description */
+.game-description {
+  background-color: #292929;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.game-description__title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Секция о типах активации удалена */
+
+.game-important-info {
+  border-top: 1px solid #3a3a3a;
+  padding-top: 16px;
+  margin-bottom: 20px;
+}
+
+.game-important-info__title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.game-important-info__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.game-important-info__list li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.game-important-info__list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffcc00;
+}
+
+.game-platform-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid #3a3a3a;
+  padding-top: 16px;
+  margin-bottom: 20px;
+}
+
+.game-platform-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-platform-item__label {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.game-platform-item__value {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.game-full-description {
+  border-top: 1px solid #3a3a3a;
+  padding-top: 16px;
+}
+
+.game-full-description__title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.game-full-description__text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Fixed Add to Cart button */
+.game-add-to-cart-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 16px;
+  background-color: #1a1a1a;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.game-add-to-cart-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  background-color: #ff9f1c;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.game-add-to-cart-button:active {
+  background-color: #e68c09;
+}
+
+/* Loading and Error */
+.loading, .error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+}

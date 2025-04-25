@@ -1,0 +1,82 @@
+.game-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .game-card__image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .game-card__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  .game-card__discount-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: var(--discount-badge-bg);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .game-card__likes {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  
+  .game-card__info {
+    padding: 10px;
+  }
+  
+  .game-card__title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .game-card__price-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .game-card__price,
+  .game-card__discount-price {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .game-card__discount-price {
+    color: var(--discount-color);
+    margin-right: 8px;
+  }
+  
+  .game-card__original-price {
+    text-decoration: line-through;
+    font-size: 12px;
+    opacity: 0.7;
+  }

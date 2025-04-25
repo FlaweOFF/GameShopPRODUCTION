@@ -1,0 +1,50 @@
+# Зависимости
+node_modules/
+/.pnp
+.pnp.js
+
+# Тестирование
+/coverage
+
+# Сборка
+/frontend/build/
+/admin-panel/build/
+/dist
+
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+
+# Файлы редакторов и IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Локальные файлы
+.DS_Store
+*.local
+
+# Файлы кеша
+.cache/
+.npm/
+.eslintcache
+
+# Временные файлы
+*.tmp
+*.temp
+
+# Uploaded files (при наличии)
+uploads/
+
+# Файлы MongoDB (при локальной установке)
+/data/db/
+
+# Debug логи
+debug.log

@@ -1,0 +1,13 @@
+.category-form {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .category-form__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  /* The rest of the form styles are shared with GameForm.css */

@@ -1,0 +1,57 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+  }
+  
+  .section-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .fire-icon,
+  .discount-icon,
+  .trophy-icon {
+    margin-right: 8px;
+  }
+  
+  .see-all-link {
+    color: var(--text-color);
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .featured-games-section,
+  .weekly-discounts-section,
+  .bestsellers-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+  }
+  
+  .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    padding: 0 16px;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+  }
+  
