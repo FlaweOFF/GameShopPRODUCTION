@@ -16,7 +16,7 @@ const app = express();
 // Middleware
 // Configure CORS to allow requests from admin panel
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3002'],
+  origin: ['https://gameparadice.ru', 'https://admin.gameparadice.ru', 'http://localhost:3000', 'http://localhost:3002'],
   credentials: true
 }));
 
@@ -57,16 +57,18 @@ if (process.env.NODE_ENV === 'production') {
   
   // Serve admin panel
   app.use('/admin', express.static(path.join(__dirname, '../../admin-panel/build')));
+
+  // Handle admin panel routes
+  app.get('/admin/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../admin-panel/build', 'index.html'));
+  });
   
   // Handle frontend routes
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../../frontend/build', 'index.html'));
   });
   
-  // Handle admin panel routes
-  app.get('/admin/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../admin-panel/build', 'index.html'));
-  });
+  
   
   // Handle all other routes
   app.get('*', (req, res) => {
